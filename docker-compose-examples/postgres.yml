@@ -1,0 +1,12 @@
+version: "2"
+services:
+  daptinpostgresdb:
+    # network_mode: host
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=daptin123
+      - POSTGRES_USER=daptin
+      - POSTGRES_DB=daptin
