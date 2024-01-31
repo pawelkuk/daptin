@@ -10,3 +10,11 @@ services:
       - POSTGRES_PASSWORD=daptin123
       - POSTGRES_USER=daptin
       - POSTGRES_DB=daptin
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: pass1234
+    ports:
+      - 5050:80
